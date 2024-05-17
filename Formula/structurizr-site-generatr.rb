@@ -1,6 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class StructurizrSiteGeneratr < Formula
   desc "Static site generator for architecture models created with Structurizr DSL"
   homepage "https://avisi-cloud.github.io/structurizr-site-generatr/"
