@@ -5,7 +5,6 @@ class StructurizrSiteGeneratr < Formula
   sha256 "1956e50fff911f9feac64e56e63747c76662752fbaf30d89e5545af826822f61"
   license "Apache-2.0"
 
-
   depends_on "graphviz"
   depends_on "openjdk"
 
@@ -13,7 +12,7 @@ class StructurizrSiteGeneratr < Formula
     libexec.install Dir["*"]
     (bin/"structurizr-site-generatr").write_env_script(
       libexec/"bin/structurizr-site-generatr",
-      Language::Java.overridable_java_home_env
+      Language::Java.overridable_java_home_env,
     )
   end
 
