@@ -11,7 +11,10 @@ class StructurizrSiteGeneratr < Formula
 
   def install
     libexec.install Dir["*"]
-    (bin/"structurizr-site-generatr").write_env_script libexec/"bin/structurizr-site-generatr", Language::Java.overridable_java_home_env
+    (bin/"structurizr-site-generatr").write_env_script(
+      libexec/"bin/structurizr-site-generatr",
+      Language::Java.overridable_java_home_env
+    )
   end
 
   test do
